@@ -8,12 +8,14 @@
     <title>Beers</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container d-flex flex-wrap">
        @foreach ($beers as $beer)
        <div class="card" style="width: 18rem;" >
         <img class="card-img-top" src="{{$beer->filepath}}" alt="">
-        <div class="card-body">
-          <p class="card-text">{{$beer->name}}</p>
+        <div class="card-body text-center">
+          <h2 class="card-text">{{$beer->name}}</h2>
+          <p>{{$beer->price}}</p>
+          <a href="{{route('beers.show', $beer->id)}}" class="stretched-link"></a>
         </div>
     </div>
        @endforeach
