@@ -29,15 +29,15 @@
                 <input type="text" class="form-control" name="abv" id="abv"  placeholder="">
             </div>
             <div class="form-group">
-                <label for="filePath">FilePath</label>
-                <input type="text" class="form-control" name="filePath" id="filePath"  placeholder="">
+                <label for="filepath">FilePath</label>
+                <input type="text" class="form-control" name="filepath" id="filepath"  placeholder="">
             </div>
             <div class="form-group">
                 <label for="description">Descrizione</label>
                 <textarea class="form-control" name="description" id="description" rows="6"></textarea>
             </div>
 
-            <a class= "btn btn-dark" href="{{route('beers.store')}}">Salva</a>
+            <input class="btn btn-dark" type="submit" value="invia">
 
             
         </form>

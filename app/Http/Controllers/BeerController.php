@@ -44,7 +44,7 @@ class BeerController extends Controller
         $newBeer->category = $data['category'];
         $newBeer->price = $data['price'];
         $newBeer->abv = $data['abv'];
-        $newBeer->filePath = $data['filePath'];
+        $newBeer->filepath = $data['filepath'];
         $newBeer->description = $data['description'];
 
         $newBeer->save();
