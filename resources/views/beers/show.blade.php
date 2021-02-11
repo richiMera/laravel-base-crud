@@ -9,13 +9,20 @@
 </head>
 <body>
     <div class="container">
-        <div class="card"  >
-         <img class="card-img-top" src="{{$beer->filepath}}" alt="">
-         <div class="card-body text-center">
-           <h2 class="card-text">{{$beer->name}}</h2>
-           <p>{{$beer->price}}</p>
-         </div>
-     </div>
+        <div class="row">
+        
+            <div class="col-md-6" >
+                <img class="card-img-top" src="{{$beer->filepath}}" alt="">
+            </div>
+            <div class="col-md-6" >
+                <h2>{{$beer->name}}</h2>
+                <h3>Tipo: {{$beer->category}}</h3>
+                <span><strong>Gradazione:</strong> {{$beer->abv}}</span>
+                <p><strong>Descrizione:</strong> {{$beer->description}}</p>
+            </div>
+
+       
+        </div>
      </div>
 </body>
 </html>
