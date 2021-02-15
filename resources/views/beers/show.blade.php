@@ -20,7 +20,7 @@
                 <span><strong>Gradazione:</strong> {{$beer->abv}}</span>
                 <p><strong>Descrizione:</strong> {{$beer->description}}</p>
             </div>
-
+            <a class="btn btn-primary" href="{{route('beers.index')}}">Torna all'elenco</a>
        
         </div>
      </div>
